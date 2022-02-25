@@ -1,0 +1,19 @@
+npm i --save sequelize sequelize-cli
+
+cài đặt môi trường
+npm i -g sequelize-cli
+
+phát sinh các thư mục và mã lệnh 
+sequelize init
+
+config: cấu hình CSDL 
+migrations: chứa các đoạn code SQL để tạo bảng
+            Thường được sử dụng khi có yêu cầu CSDL thay đổi
+seeders: chứa những câu lệnh mẫu để tạo dữ liệu mẫu lên CSDL of mình
+
+Tạo ra bảng
+sequelize model:create --name Product --attributes name:string,summary:text, description:text,price:decimal
+
+
+Cài postgres
+npm i --save pg pg-hstore
